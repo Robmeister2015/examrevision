@@ -16,14 +16,13 @@ public class NestedClasses {
 		 */
 		NestedClasses n = new NestedClasses();
 		NestedClasses.NestedClassInside innerInstance = n.new NestedClassInside();
-		System.out.println(innerInstance.privateOuterInt);
 		
 	}
 	
 	class NestedClassInside {
 		
 		public NestedClassInside(){
-			this.privateOuterInt = 10;
+			privateOuterInt = 10;
 		}
 	}
 	//Accessing private members of an outer class
